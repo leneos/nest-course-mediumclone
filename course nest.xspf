@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>Плейлист</title>
+	<trackList>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/%5BUdemy%5D%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20%282021%29/01%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/001%20%D0%9A%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%BC%D1%8B%20%D0%B1%D1%83%D0%B4%D0%B5%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C_.mp4</location>
+			<duration>413546</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/01%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/002%20%D0%A7%D1%82%D0%BE%20%D0%BC%D1%8B%20%D0%B1%D1%83%D0%B4%D0%B5%D0%BC%20%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D1%8B%D0%B2%D0%B0%D1%82%D1%8C_.mp4</location>
+			<duration>157674</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/01%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/003%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82.mp4</location>
+			<duration>637780</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/004%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2.mp4</location>
+			<duration>695999</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>3</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/005%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%B4%D0%BB%D1%8F%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2.mp4</location>
+			<duration>515903</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>4</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/006%20%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D0%B0%D0%B1%D1%81%D0%BE%D0%BB%D1%8E%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%83%D1%82%D0%B8.mp4</location>
+			<duration>811540</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>5</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/007%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20Postgres.mp4</location>
+			<duration>700330</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>6</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/008%20%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%D1%83%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.mp4</location>
+			<duration>462847</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>7</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/009%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D1%81%D1%83%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D1%82%D0%B5%D0%B3%D0%B0.mp4</location>
+			<duration>631636</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>8</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/02%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2/010%20%D0%9D%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D0%B5%D0%BC%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C%20%D1%81%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC%20%D1%82%D0%B5%D0%B3%D0%BE%D0%B2.mp4</location>
+			<duration>907284</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>9</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/011%20%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D0%BC%D1%81%D1%8F%20%D1%81%20%D0%BC%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%D0%BC%D0%B8.mp4</location>
+			<duration>827178</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>10</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/012%20%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8.mp4</location>
+			<duration>509652</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>11</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/013%20%D0%A7%D1%82%D0%BE%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B5%20DTO_.mp4</location>
+			<duration>454890</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>12</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/014%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D1%81%D1%83%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F.mp4</location>
+			<duration>865706</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>13</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/015%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20JWT%20%D1%82%D0%BE%D0%BA%D0%B5%D0%BD.mp4</location>
+			<duration>1066196</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>14</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/016%20%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D0%BC%D1%81%D1%8F%20%D1%81%20%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%B5%D0%B9.mp4</location>
+			<duration>606911</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>15</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/017%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%BB%D0%BE%D0%B3%D0%B8%D0%BD%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81.mp4</location>
+			<duration>945535</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>16</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/018%20Middleware%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8.mp4</location>
+			<duration>1439530</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>17</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/019%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D0%B4%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F.mp4</location>
+			<duration>564991</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>18</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/020%20Guard%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8.mp4</location>
+			<duration>483455</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>19</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/03%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8/021%20%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B3%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F.mp4</location>
+			<duration>638186</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>20</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/022%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.mp4</location>
+			<duration>738452</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>21</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/023%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.mp4</location>
+			<duration>1025919</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>22</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/024%20%D0%97%D0%B0%D0%BA%D0%B0%D0%BD%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.mp4</location>
+			<duration>579135</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>23</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/025%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BF%D0%BE%20%D1%81%D0%BB%D0%B0%D0%B3%D1%83.mp4</location>
+			<duration>389396</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>24</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/026%20%D0%98%D0%BC%D0%BF%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.mp4</location>
+			<duration>524863</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>25</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/027%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.mp4</location>
+			<duration>658964</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>26</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/028%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D1%84%D0%B8%D0%B4.mp4</location>
+			<duration>1489535</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>27</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/029%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%BB%D0%B0%D0%B9%D0%BA%20%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9.mp4</location>
+			<duration>1023615</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>28</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/04%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/030%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%B4%D0%B8%D0%B7%D0%BB%D0%B0%D0%B9%D0%BA%20%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9.mp4</location>
+			<duration>1066666</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>29</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/05%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F/031%20%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D0%BC%20%D1%81%D0%B8%D0%B4%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D1%88%D0%B5%D0%B9%20%D0%B1%D0%B0%D0%B7%D1%8B.mp4</location>
+			<duration>761471</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>30</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/05%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F/032%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F.mp4</location>
+			<duration>986879</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>31</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/05%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F/033%20%D0%98%D0%BC%D0%BF%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20%D1%84%D0%BE%D0%BB%D0%BB%D0%BE%D1%83%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.mp4</location>
+			<duration>723988</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>32</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/05%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F/034%20%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%20%D0%B0%D0%BD%D1%84%D0%BE%D0%BB%D0%BB%D0%BE%D1%83%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.mp4</location>
+			<duration>482879</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>33</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/05%20%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F/035%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC%20%D1%84%D0%B8%D0%B4%20%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B3%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F.mp4</location>
+			<duration>892692</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>34</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/06%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5%20%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%BD%D0%B8%D1%8F/036%20%D0%A3%D0%BB%D1%83%D1%87%D1%88%D0%B0%D0%B5%D0%BC%20%D0%B1%D0%B5%D0%BA%D0%B5%D0%BD%D0%B4%20%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D1%8E.mp4</location>
+			<duration>1105151</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>35</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/06%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B5%20%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%BD%D0%B8%D1%8F/037%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%20API%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4%D0%B5.mp4</location>
+			<duration>786516</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>36</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/banan/Downloads/[Udemy]%20NestJS%20-%20%D0%BF%D0%B8%D1%88%D0%B5%D0%BC%20API%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%81%20%D0%BD%D1%83%D0%BB%D1%8F%20(2021)/07%20%D0%A7%D1%82%D0%BE%20%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5_/038%20%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.mp4</location>
+			<duration>113002</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>37</vlc:id>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
+		<vlc:item tid="1"/>
+		<vlc:item tid="2"/>
+		<vlc:item tid="3"/>
+		<vlc:item tid="4"/>
+		<vlc:item tid="5"/>
+		<vlc:item tid="6"/>
+		<vlc:item tid="7"/>
+		<vlc:item tid="8"/>
+		<vlc:item tid="9"/>
+		<vlc:item tid="10"/>
+		<vlc:item tid="11"/>
+		<vlc:item tid="12"/>
+		<vlc:item tid="13"/>
+		<vlc:item tid="14"/>
+		<vlc:item tid="15"/>
+		<vlc:item tid="16"/>
+		<vlc:item tid="17"/>
+		<vlc:item tid="18"/>
+		<vlc:item tid="19"/>
+		<vlc:item tid="20"/>
+		<vlc:item tid="21"/>
+		<vlc:item tid="22"/>
+		<vlc:item tid="23"/>
+		<vlc:item tid="24"/>
+		<vlc:item tid="25"/>
+		<vlc:item tid="26"/>
+		<vlc:item tid="27"/>
+		<vlc:item tid="28"/>
+		<vlc:item tid="29"/>
+		<vlc:item tid="30"/>
+		<vlc:item tid="31"/>
+		<vlc:item tid="32"/>
+		<vlc:item tid="33"/>
+		<vlc:item tid="34"/>
+		<vlc:item tid="35"/>
+		<vlc:item tid="36"/>
+		<vlc:item tid="37"/>
+	</extension>
+</playlist>
