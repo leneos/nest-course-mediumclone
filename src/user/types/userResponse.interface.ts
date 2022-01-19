@@ -1,5 +1,5 @@
 import { UserType } from './user.type';
 
 export interface UserResponseInterface {
-  user: UserType & { token: string };
+  user: Omit<UserType, 'password'> & { token: string };
 }

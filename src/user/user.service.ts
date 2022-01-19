@@ -1,12 +1,13 @@
+import { LoginUserDto } from './dto/loginUser.dto';
 import { UserResponseInterface } from './types/userResponse.interface';
 import { sign } from 'jsonwebtoken';
 import { JSW_SECRET } from './../config';
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateUserDto } from './dto/createUser.dto';
 import { UserEntity } from './user.entity';
-
+import { compare } from 'bcrypt';
 @Injectable()
 export class UserService {
   constructor(
@@ -14,7 +15,52 @@ export class UserService {
     private readonly userRepository: Repository<UserEntity>,
   ) {}
 
-  async createUser(createUserDto: CreateUserDto): Promise<any> {
+  async loginUser(loginUserDto: LoginUserDto): Promise<UserEntity> {
+    const userByEmail = await this.userRepository.findOne(
+      {
+        email: loginUserDto.email,
+      },
+      {
+        select: ['id', 'username', 'email', 'bio', 'image', 'password'],
+      },
+    );
+    if (!userByEmail) {
+      throw new HttpException(
+        'User doesnt exist',
+        HttpStatus.UNPROCESSABLE_ENTITY,
+      );
+    }
+    const isPasswordRight = await compare(
+      loginUserDto.password,
+      userByEmail.password,
+    );
+    if (!isPasswordRight) {
+      throw new HttpException(
+        'Wrong password',
+        HttpStatus.UNPROCESSABLE_ENTITY,
+      );
+    }
+    delete userByEmail.password;
+    return await userByEmail;
+  }
+
+  async createUser(createUserDto: CreateUserDto): Promise<UserEntity> {
+    const userByEmailOrUsername = await this.userRepository.findOne({
+      where: [
+        {
+          email: createUserDto.email,
+        },
+        {
+          username: createUserDto.username,
+        },
+      ],
+    });
+    if (userByEmailOrUsername) {
+      throw new HttpException(
+        'Email or username are taken',
+        HttpStatus.UNPROCESSABLE_ENTITY,
+      );
+    }
     const newUser = new UserEntity();
     Object.assign(newUser, createUserDto);
     return await this.userRepository.save(newUser);
@@ -22,6 +68,12 @@ export class UserService {
 
   async getUser(): Promise<UserEntity[]> {
     return await this.userRepository.find();
+  }
+
+  findById(id: number): Promise<UserEntity> {
+    return this.userRepository.findOne({
+      id,
+    });
   }
 
   generateJwt(user: UserEntity): string {
@@ -32,6 +84,9 @@ export class UserService {
         email: user.email,
       },
       JSW_SECRET,
+      {
+        expiresIn: '1h',
+      },
     );
   }
 
