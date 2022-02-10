@@ -8,6 +8,7 @@ import { Repository } from 'typeorm';
 import { CreateUserDto } from './dto/createUser.dto';
 import { UserEntity } from './user.entity';
 import { compare } from 'bcrypt';
+import { EditUserDto } from './dto/editUser.dto';
 @Injectable()
 export class UserService {
   constructor(
@@ -66,8 +67,15 @@ export class UserService {
     return await this.userRepository.save(newUser);
   }
 
-  async getUser(): Promise<UserEntity[]> {
-    return await this.userRepository.find();
+  async editUser(
+    userDto: EditUserDto,
+    currentUserId: UserEntity['id'],
+  ): Promise<UserEntity> {
+    const user = await this.findById(currentUserId);
+    return this.userRepository.save({
+      ...user,
+      ...userDto,
+    });
   }
 
   findById(id: number): Promise<UserEntity> {
