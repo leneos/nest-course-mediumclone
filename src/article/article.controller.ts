@@ -1,3 +1,5 @@
+import { ArticleEntity } from './article.entity';
+import { ArticlesResponseInterface } from './types/ArticlesResponseInterface.interface';
 import { EditArticleDto } from './dto/editArticleDto.dto';
 import { ArticleResponseInterface } from './types/articleResponse.interface';
 import { CreateArticleDto } from './dto/createArticle.dto';
@@ -11,6 +13,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
   UseGuards,
   UsePipes,
   ValidationPipe,
@@ -22,11 +25,19 @@ import { User } from '@app/user/decorators/user.decorator';
 export class ArticleController {
   constructor(private readonly articleService: ArticleService) {}
 
+  @Get()
+  async findAll(
+    @User('id') currentUserId: number,
+    @Query() query: any,
+  ): Promise<ArticlesResponseInterface> {
+    return await this.articleService.findAll(currentUserId, query);
+  }
+
   @Get(':slug')
   async getSingleArticle(
     @Param('slug') slug: string,
   ): Promise<ArticleResponseInterface> {
-    const article = await this.articleService.getArticle(slug);
+    const article = await this.articleService.findBySlug(slug);
     return this.articleService.buildArticleResponse(article);
   }
 
@@ -66,7 +77,34 @@ export class ArticleController {
       currentUserId,
       editArticleDto,
     );
-    console.log(newArticle);
     return this.articleService.buildArticleResponse(newArticle);
+  }
+
+  @Post(':slug/favorite')
+  @UseGuards(AuthGuard)
+  @UsePipes(new ValidationPipe())
+  async addArticleToFavorites(
+    @User('id') currentUserId: number,
+    @Param('slug') slug: string,
+  ): Promise<ArticleResponseInterface> {
+    const article = await this.articleService.addArticleToFavourites(
+      currentUserId,
+      slug,
+    );
+    return this.articleService.buildArticleResponse(article);
+  }
+
+  @Delete(':slug/favorite')
+  @UseGuards(AuthGuard)
+  @UsePipes(new ValidationPipe())
+  async deleteArticleFromFavourites(
+    @User('id') currentUserId: number,
+    @Param('slug') slug: string,
+  ): Promise<ArticleResponseInterface> {
+    const article = await this.articleService.deleteArticleFromFavourites(
+      currentUserId,
+      slug,
+    );
+    return this.articleService.buildArticleResponse(article);
   }
 }
