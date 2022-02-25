@@ -39,5 +39,5 @@ export class UserEntity {
 
   @ManyToMany(() => ArticleEntity)
   @JoinTable()
-  favourites: ArticleEntity[];
+  favorites: ArticleEntity[];
 }

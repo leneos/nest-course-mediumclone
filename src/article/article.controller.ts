@@ -87,7 +87,7 @@ export class ArticleController {
     @User('id') currentUserId: number,
     @Param('slug') slug: string,
   ): Promise<ArticleResponseInterface> {
-    const article = await this.articleService.addArticleToFavourites(
+    const article = await this.articleService.addArticleToFavorites(
       currentUserId,
       slug,
     );
@@ -97,11 +97,11 @@ export class ArticleController {
   @Delete(':slug/favorite')
   @UseGuards(AuthGuard)
   @UsePipes(new ValidationPipe())
-  async deleteArticleFromFavourites(
+  async deleteArticleFromFavorites(
     @User('id') currentUserId: number,
     @Param('slug') slug: string,
   ): Promise<ArticleResponseInterface> {
-    const article = await this.articleService.deleteArticleFromFavourites(
+    const article = await this.articleService.deleteArticleFromFavorites(
       currentUserId,
       slug,
     );
