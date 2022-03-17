@@ -47,7 +47,6 @@ export class UserController {
   async getCurrentUser(
     @User() user: UserEntity,
   ): Promise<UserResponseInterface> {
-    console.log(user);
     return this.userService.buildUserResponse(user);
   }
 
