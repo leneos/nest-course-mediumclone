@@ -4,6 +4,7 @@ import { ProfileResponseInterface } from './types/profileResponse.interface';
 import { UserEntity } from './../user/user.entity';
 import {
   Controller,
+  Delete,
   Get,
   Param,
   Post,
@@ -20,7 +21,7 @@ export class ProfileController {
   @UsePipes(new ValidationPipe())
   async getProfile(
     @User('id') currentUserId: number,
-    @Param('username') username: UserEntity['username'],
+    @Param('username') username: string,
   ): Promise<ProfileResponseInterface> {
     const profile = await this.profileService.getProfile(
       currentUserId,
@@ -33,9 +34,22 @@ export class ProfileController {
   @UseGuards(AuthGuard)
   async followProfile(
     @User('id') currentUserId: number,
-    @Param('username') username: UserEntity['username'],
+    @Param('username') username: string,
   ): Promise<ProfileResponseInterface> {
     const profile = await this.profileService.followProfile(
+      currentUserId,
+      username,
+    );
+    return this.profileService.buildProfileResponse(profile);
+  }
+
+  @Delete(':username/unfollow')
+  @UseGuards(AuthGuard)
+  async unfollowProfile(
+    @User('id') currentUserId: number,
+    @Param('username') username: string,
+  ): Promise<ProfileResponseInterface> {
+    const profile = await this.profileService.unfollowProfile(
       currentUserId,
       username,
     );

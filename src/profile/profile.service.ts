@@ -17,18 +17,22 @@ export class ProfileService {
 
   async getProfile(
     currentUserId: number,
-    username: UserEntity['username'],
+    username: string,
   ): Promise<ProfileType> {
     const user = await this.userRepository.findOne({ username });
     if (!user) {
       throw new HttpException("Profile doesn't exist", HttpStatus.NOT_FOUND);
     }
-    return { ...user, following: false };
+    const follow = await this.followRepostory.findOne({
+      followerId: currentUserId,
+      followingId: user.id,
+    });
+    return { ...user, following: Boolean(follow) };
   }
 
   async followProfile(
     currentUserId: number,
-    username: UserEntity['username'],
+    username: string,
   ): Promise<ProfileType> {
     const user = await this.userRepository.findOne({ username });
     if (!user) {
@@ -55,6 +59,28 @@ export class ProfileService {
     }
 
     return { ...user, following: true };
+  }
+
+  async unfollowProfile(
+    currentUserId: number,
+    username: string,
+  ): Promise<ProfileType> {
+    const user = await this.userRepository.findOne({ username });
+    if (!user) {
+      throw new HttpException("Profile doesn't exist", HttpStatus.NOT_FOUND);
+    }
+
+    if (currentUserId === user.id) {
+      throw new HttpException(
+        "Follower and following can't be equal",
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+    await this.followRepostory.delete({
+      followerId: currentUserId,
+      followingId: user.id,
+    });
+    return { ...user, following: false };
   }
 
   buildProfileResponse(profile: ProfileType): ProfileResponseInterface {

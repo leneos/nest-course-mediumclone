@@ -1,4 +1,4 @@
-import { ArticleEntity } from './article.entity';
+import { BackedValidationPipe } from './../shared/pipes/BackedValidation.pipe';
 import { ArticlesResponseInterface } from './types/ArticlesResponseInterface.interface';
 import { EditArticleDto } from './dto/editArticleDto.dto';
 import { ArticleResponseInterface } from './types/articleResponse.interface';
@@ -16,7 +16,6 @@ import {
   Query,
   UseGuards,
   UsePipes,
-  ValidationPipe,
 } from '@nestjs/common';
 import { ArticleService } from './article.service';
 import { User } from '@app/user/decorators/user.decorator';
@@ -33,6 +32,15 @@ export class ArticleController {
     return await this.articleService.findAll(currentUserId, query);
   }
 
+  @Get('feed')
+  @UseGuards(AuthGuard)
+  async getFeed(
+    @User('id') currentUserId: number,
+    @Query() query: any,
+  ): Promise<ArticlesResponseInterface> {
+    return await this.articleService.getFeed(currentUserId, query);
+  }
+
   @Get(':slug')
   async getSingleArticle(
     @Param('slug') slug: string,
@@ -43,7 +51,7 @@ export class ArticleController {
 
   @Post()
   @UseGuards(AuthGuard)
-  @UsePipes(new ValidationPipe())
+  @UsePipes(new BackedBackedValidationPipe())
   async create(
     @User() currentUser: UserEntity,
     @Body('article') createArticleDto: CreateArticleDto,
@@ -66,7 +74,7 @@ export class ArticleController {
 
   @Put(':slug')
   @UseGuards(AuthGuard)
-  @UsePipes(new ValidationPipe())
+  @UsePipes(new BackedValidationPipe())
   async editArticle(
     @User('id') currentUserId: number,
     @Param('slug') slug: string,
@@ -82,7 +90,7 @@ export class ArticleController {
 
   @Post(':slug/favorite')
   @UseGuards(AuthGuard)
-  @UsePipes(new ValidationPipe())
+  @UsePipes(new BackedValidationPipe())
   async addArticleToFavorites(
     @User('id') currentUserId: number,
     @Param('slug') slug: string,
@@ -96,7 +104,7 @@ export class ArticleController {
 
   @Delete(':slug/favorite')
   @UseGuards(AuthGuard)
-  @UsePipes(new ValidationPipe())
+  @UsePipes(new BackedValidationPipe())
   async deleteArticleFromFavorites(
     @User('id') currentUserId: number,
     @Param('slug') slug: string,

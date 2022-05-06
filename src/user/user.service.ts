@@ -17,6 +17,11 @@ export class UserService {
   ) {}
 
   async loginUser(loginUserDto: LoginUserDto): Promise<UserEntity> {
+    const errorResponse = {
+      errors: {
+        'email or password': 'is invalid',
+      },
+    };
     const userByEmail = await this.userRepository.findOne(
       {
         email: loginUserDto.email,
@@ -26,41 +31,37 @@ export class UserService {
       },
     );
     if (!userByEmail) {
-      throw new HttpException(
-        'User doesnt exist',
-        HttpStatus.UNPROCESSABLE_ENTITY,
-      );
+      throw new HttpException(errorResponse, HttpStatus.UNPROCESSABLE_ENTITY);
     }
     const isPasswordRight = await compare(
       loginUserDto.password,
       userByEmail.password,
     );
     if (!isPasswordRight) {
-      throw new HttpException(
-        'Wrong password',
-        HttpStatus.UNPROCESSABLE_ENTITY,
-      );
+      throw new HttpException(errorResponse, HttpStatus.UNPROCESSABLE_ENTITY);
     }
     delete userByEmail.password;
     return await userByEmail;
   }
 
   async createUser(createUserDto: CreateUserDto): Promise<UserEntity> {
-    const userByEmailOrUsername = await this.userRepository.findOne({
-      where: [
-        {
-          email: createUserDto.email,
-        },
-        {
-          username: createUserDto.username,
-        },
-      ],
+    const errorResponse = {
+      errors: {},
+    };
+    const userByEmail = await this.userRepository.findOne({
+      email: createUserDto.email,
     });
-    if (userByEmailOrUsername) {
-      throw new HttpException(
-        'Email or username are taken',
-        HttpStatus.UNPROCESSABLE_ENTITY,
-      );
+    const userByUsername = await this.userRepository.findOne({
+      username: createUserDto.username,
+    });
+    if (userByEmail) {
+      errorResponse.errors['email'] = 'has already been taken';
+    }
+    if (userByUsername) {
+      errorResponse.errors['username'] = 'has already been taken';
+    }
+    if (userByEmail || userByUsername) {
+      throw new HttpException(errorResponse, HttpStatus.UNPROCESSABLE_ENTITY);
     }
     const newUser = new UserEntity();
     Object.assign(newUser, createUserDto);
