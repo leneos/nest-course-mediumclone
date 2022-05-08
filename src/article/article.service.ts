@@ -1,3 +1,6 @@
+import { CommentsResponseInterface } from './types/commentsResponse.interface';
+import { ArticleCommentResponseInterface } from './types/articleCommentResponse.interface';
+import { CommentEntity } from '@app/article/comment.entity';
 import { EditArticleDto } from './dto/editArticleDto.dto';
 import { ArticlesResponseInterface } from './types/ArticlesResponseInterface.interface';
 import { ArticleResponseInterface } from './types/articleResponse.interface';
@@ -9,6 +12,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, getRepository, Repository } from 'typeorm';
 import slugify from 'slugify';
 import { FollowEntity } from '@app/profile/follow.entity';
+import { AddArticleCommentDto } from './dto/addArticleComment.dto';
 
 @Injectable()
 export class ArticleService {
@@ -19,6 +23,8 @@ export class ArticleService {
     private readonly userRepository: Repository<UserEntity>,
     @InjectRepository(FollowEntity)
     private readonly followRepository: Repository<FollowEntity>,
+    @InjectRepository(CommentEntity)
+    private readonly commentRepository: Repository<CommentEntity>,
   ) {}
 
   async findAll(
@@ -213,7 +219,70 @@ export class ArticleService {
     return article;
   }
 
+  async addComment(
+    currentUserId: number,
+    slug: string,
+    addArticleCommentDto: AddArticleCommentDto,
+  ): Promise<CommentEntity> {
+    const article = await this.findBySlug(slug);
+    const user = await this.userRepository.findOne(currentUserId);
+    const comment = new CommentEntity();
+    if (article) {
+      Object.assign(comment, {
+        body: addArticleCommentDto.body,
+        author: user,
+        article: article,
+      });
+      await this.commentRepository.save(comment);
+    }
+    return comment;
+  }
+  async deleteArticleComment(
+    currentUserId: number,
+    slug: string,
+    commentId: string,
+  ): Promise<ArticleEntity> {
+    const article = await this.findBySlug(slug);
+
+    if (!article) {
+      throw new HttpException('Article does not exist', HttpStatus.NOT_FOUND);
+    }
+    if (article.author.id !== currentUserId) {
+      throw new HttpException('You are not an author', HttpStatus.FORBIDDEN);
+    }
+    await this.commentRepository.delete(commentId);
+
+    return article;
+  }
+  async getArticleComments(slug: string): Promise<CommentEntity[]> {
+    const article = await this.findBySlug(slug);
+    if (article) {
+      const queryBuilder = getRepository(CommentEntity)
+        .createQueryBuilder('comments')
+        .leftJoinAndSelect('comments.article', 'article')
+        .orderBy('comments.createdAt', 'DESC')
+        .andWhere('comments.article = :article', {
+          article: article.id,
+        });
+      const comments = await queryBuilder.getMany();
+      return comments;
+    }
+    throw new HttpException('Article does not exist', HttpStatus.NOT_FOUND);
+  }
+
   buildArticleResponse(article: ArticleEntity): ArticleResponseInterface {
     return { article };
+  }
+  buildArticleCommentResponse(
+    comment: CommentEntity,
+  ): ArticleCommentResponseInterface {
+    return {
+      comment: {
+        body: comment.body,
+      },
+    };
+  }
+  buildCommentsRepsonse(comments: CommentEntity[]): CommentsResponseInterface {
+    return { comments };
   }
 }

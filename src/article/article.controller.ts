@@ -1,3 +1,5 @@
+import { CommentsResponseInterface } from './types/commentsResponse.interface';
+import { CommentEntity } from '@app/article/comment.entity';
 import { BackedValidationPipe } from './../shared/pipes/BackedValidation.pipe';
 import { ArticlesResponseInterface } from './types/ArticlesResponseInterface.interface';
 import { EditArticleDto } from './dto/editArticleDto.dto';
@@ -19,6 +21,8 @@ import {
 } from '@nestjs/common';
 import { ArticleService } from './article.service';
 import { User } from '@app/user/decorators/user.decorator';
+import { AddArticleCommentDto } from './dto/addArticleComment.dto';
+import { ArticleCommentResponseInterface } from './types/articleCommentResponse.interface';
 
 @Controller('articles')
 export class ArticleController {
@@ -51,7 +55,7 @@ export class ArticleController {
 
   @Post()
   @UseGuards(AuthGuard)
-  @UsePipes(new BackedBackedValidationPipe())
+  @UsePipes(new BackedValidationPipe())
   async create(
     @User() currentUser: UserEntity,
     @Body('article') createArticleDto: CreateArticleDto,
@@ -114,5 +118,45 @@ export class ArticleController {
       slug,
     );
     return this.articleService.buildArticleResponse(article);
+  }
+
+  @Post(':slug/comments')
+  @UseGuards(AuthGuard)
+  @UsePipes(new BackedValidationPipe())
+  async addArticleComment(
+    @User('id') currentUserId: number,
+    @Param('slug') slug: string,
+    @Body('comment') addArticleCommentDto: AddArticleCommentDto,
+  ): Promise<ArticleCommentResponseInterface> {
+    const comment = await this.articleService.addComment(
+      currentUserId,
+      slug,
+      addArticleCommentDto,
+    );
+    return this.articleService.buildArticleCommentResponse(comment);
+  }
+  @Delete(':slug/comments/:id')
+  @UseGuards(AuthGuard)
+  @UsePipes(new BackedValidationPipe())
+  async deleteArticleComment(
+    @User('id') currentUserId: number,
+    @Param('slug') slug: string,
+    @Param('id') commentId: string,
+  ): Promise<ArticleResponseInterface> {
+    const article = await this.articleService.deleteArticleComment(
+      currentUserId,
+      slug,
+      commentId,
+    );
+    return this.articleService.buildArticleResponse(article);
+  }
+
+  @Get(':slug/comments')
+  @UsePipes(new BackedValidationPipe())
+  async getArticleComments(
+    @Param('slug') slug: string,
+  ): Promise<CommentsResponseInterface> {
+    const comments = await this.articleService.getArticleComments(slug);
+    return this.articleService.buildCommentsRepsonse(comments);
   }
 }
