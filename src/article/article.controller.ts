@@ -152,11 +152,14 @@ export class ArticleController {
   }
 
   @Get(':slug/comments')
-  @UsePipes(new BackedValidationPipe())
   async getArticleComments(
+    @User('id') currentUserId: number,
     @Param('slug') slug: string,
   ): Promise<CommentsResponseInterface> {
-    const comments = await this.articleService.getArticleComments(slug);
+    const comments = await this.articleService.getArticleComments(
+      slug,
+      currentUserId,
+    );
     return this.articleService.buildCommentsRepsonse(comments);
   }
 }

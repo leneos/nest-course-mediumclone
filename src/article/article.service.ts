@@ -254,20 +254,61 @@ export class ArticleService {
 
     return article;
   }
-  async getArticleComments(slug: string): Promise<CommentEntity[]> {
+
+  async getArticleComments(slug: string, currentUserId?: number): Promise<any> {
     const article = await this.findBySlug(slug);
-    if (article) {
-      const queryBuilder = getRepository(CommentEntity)
-        .createQueryBuilder('comments')
-        .leftJoinAndSelect('comments.article', 'article')
-        .orderBy('comments.createdAt', 'DESC')
-        .andWhere('comments.article = :article', {
-          article: article.id,
-        });
-      const comments = await queryBuilder.getMany();
-      return comments;
+
+    if (!article) {
+      throw new HttpException('Article does not exist', HttpStatus.NOT_FOUND);
     }
-    throw new HttpException('Article does not exist', HttpStatus.NOT_FOUND);
+    const queryBuilder = getRepository(CommentEntity)
+      .createQueryBuilder('comments')
+      .leftJoinAndSelect('comments.author', 'author')
+      .orderBy('comments.createdAt', 'DESC')
+      .where('comments.article = :article', {
+        article: article.id,
+      });
+
+    const comments = await queryBuilder.getMany();
+
+    if (currentUserId) {
+      const follows = await this.followRepository.find({
+        followerId: currentUserId,
+      });
+
+      if (follows.length === 0) {
+        return comments.map((comment) => {
+          return {
+            ...comment,
+            author: {
+              ...comment.author,
+              following: false,
+            },
+          };
+        });
+      }
+
+      const followingUserIds = follows.map((item) => item.followingId);
+      return comments.map((comment) => {
+        console.log(Boolean(followingUserIds.indexOf(currentUserId)));
+        return {
+          ...comment,
+          author: {
+            ...comment.author,
+            following: !!followingUserIds.indexOf(currentUserId),
+          },
+        };
+      });
+    }
+    return comments.map((comment) => {
+      return {
+        ...comment,
+        author: {
+          ...comment.author,
+          following: false,
+        },
+      };
+    });
   }
 
   buildArticleResponse(article: ArticleEntity): ArticleResponseInterface {
